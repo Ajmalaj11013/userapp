@@ -1,0 +1,35 @@
+.footer {
+    background-color: #1E3A5F;  /* Dark blue, same as part of header gradient */
+    color: white;
+    padding: 10px 0px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);  /* Drop shadow for the footer */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-family: monospace;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  
+  }
+  
+  .footer a:hover {
+    color: #e0e0e0;
+  }
+  

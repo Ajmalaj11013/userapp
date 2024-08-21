@@ -1,0 +1,29 @@
+.card-details {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-top: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-Family: monospace;
+    color: black;
+    box-sizing: border-box;
+    background-color:#ffffff;
+    font-size: large;
+    background-color: rgb(37, 66, 132);
+    color: white;
+  }
+  .pre{
+    white-space: pre;
+  }
+.search-bar{
+  margin: 10px;
+}
+
+.pick{
+  width: 200px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
