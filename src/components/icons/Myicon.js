@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faHome, faHistory,faCheckCircle,faTrash, faEdit,faTimes,faCheck,faMapMarkerAlt, faBookOpen} from '@fortawesome/free-solid-svg-icons';
+import { faBell, faHome, faHistory,faCheckCircle,faTrash, faEdit,faTimes,faCheck,faMapMarkerAlt, faBookOpen, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import './Icon.css';
 
 export const BellIcon = ({ notificationCount }) => {
@@ -50,5 +50,11 @@ export const CancelIcon = () => (
 export const SaveIcon = () => (
   <div className="icon-position">
     <FontAwesomeIcon icon={faCheck} className="save-icon" />
+  </div>
+);
+
+export const CartIcon = () => (
+  <div className="icon-position">
+    <FontAwesomeIcon icon={faShoppingCart} className="save-icon" />
   </div>
 );

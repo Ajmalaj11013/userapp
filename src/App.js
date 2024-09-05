@@ -1,4 +1,5 @@
 import './App.css';
+import { CartProvider } from './components/CartContext.js'
 import React, {useState}  from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './components/Home';
@@ -8,6 +9,8 @@ import Profile from './components/Profile';
 import Header from './components/Header';
 import './App.css';
 import Footer from './components/Footer';
+import Cart from './components/Cart.js';
+
 
 function App() {
   const [notificationCount, setNotificationCount] = useState(0);
@@ -18,6 +21,7 @@ function App() {
 
   
   return (
+    <CartProvider>
     <Router>
       <div className="app">
             <Header />
@@ -27,6 +31,7 @@ function App() {
                 <Route path="/Bookings" element={<Bookings handleNotification={handleNotification} />} />
                 <Route path="/Notification" element={<Notification />} />
                 <Route path="/Profile" element={<Profile />} />
+                <Route path="/Cart" element={<Cart />} />
                 <Route path="*" element={<Home />} /> {/* Catch-all route */}
               </Routes>
             </div>
@@ -34,6 +39,7 @@ function App() {
        
       </div>
     </Router>
+    </CartProvider>
   );
 }
 

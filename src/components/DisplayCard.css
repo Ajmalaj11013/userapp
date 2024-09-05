@@ -1,0 +1,292 @@
+.responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image scales to fit within the container while maintaining its aspect ratio */
+    display: block; /* Removes extra space below the image */
+  }
+  .priceper{
+    display: flex;
+    align-items: center; /* Centers the text vertically */
+    justify-content: center; /* Centers the text horizontally */
+  }
+.km-class{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px;
+}
+
+.card-style{
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 30px 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-Family: monospace;
+    color: black;
+    box-sizing: border-box;
+    background-color:#ffffff;
+    font-size: large;
+    color: white;
+
+}
+.flex {
+    display: flex;
+}
+
+.font-sans {
+    font-family: sans-serif;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.w-48 {
+    width: 12rem;
+}
+
+.relative {
+    position: relative;
+    height: 150px;
+    width: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 50%;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.flex-auto {
+    flex: 1 1 auto;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.text-lg {
+    font-size: 1.0rem;
+    line-height: 1.75rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-slate-900 {
+    color: #0f172a;
+}
+
+.text-slate-500 {
+    color: #64748b;
+}
+
+.text-slate-700 {
+    color: #334155;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.flex.items-baseline {
+    align-items: baseline;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.pb-6 {
+    padding-bottom: 1.5rem;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-slate-200 {
+    border-color: #e2e8f0;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0.5rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.w-9 {
+    width: 2.25rem;
+}
+
+.h-9 {
+    height: 2.25rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.peer {
+    --tw-peer-checked-bg: #0f172a;
+    --tw-peer-checked-text: #fff;
+    --tw-peer-checked-font-weight: 600;
+}
+
+.peer:checked ~ .peer-checked\\:font-semibold {
+    font-weight: var(--tw-peer-checked-font-weight);
+}
+
+.peer:checked ~ .peer-checked\\:bg-slate-900 {
+    background-color: var(--tw-peer-checked-bg);
+}
+
+.peer:checked ~ .peer-checked\\:text-white {
+    color: var(--tw-peer-checked-text);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 1rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.flex.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.w-9 {
+    width: 2.25rem;
+}
+
+.h-9 {
+    height: 2.25rem;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.text-slate-300 {
+    color: #cbd5e1;
+}
+
+.text-slate-900 {
+    color: #0f172a;
+}
+
+.text-slate-700 {
+    color: #334155;
+    color: green;
+}
+
+.text-slate-500 {
+    color: #64748b;
+}
+
+.border-slate-200 {
+    border-color: #e2e8f0;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.pb-6 {
+    padding-bottom: 1.5rem;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.pt{
+    padding-top: 0px;
+}
+
+.pad-b0{
+    padding-bottom: 0px;
+}
+.mb-2{
+    margin-bottom: 5px;
+}
+.pading{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: monospace;
+    font-size: 11px;
+}

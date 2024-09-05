@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import './MapDropdown.css';
 
 const items = [
   "Kasaragod",
@@ -30,7 +31,7 @@ const MapDropdown = () => {
     <div style={{ position: 'relative', display: 'inline-block', width:'70px' }}>
       <FontAwesomeIcon icon={faMapMarkerAlt} onClick={toggleDropdown} style={{ cursor: 'pointer'}} />
       {selectedItem && (
-                <div style={{ marginTop:'8px',fontSize:'12px',color:'#333'}}>
+                <div style={{ marginTop:'8px',fontSize:'14px',color:'#333',paddingRight:'5px'}}>
                     {selectedItem}
                 </div>
             )}
@@ -45,8 +46,10 @@ const MapDropdown = () => {
           borderRadius: '4px',
           boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
           zIndex: 1000,
-          padding: '10px'
+          padding: '10px',
+          fontFamily:'monospace'
         }}>
+          <button className="close-btn" onClick={()=>{setIsOpen(false);}}>X</button>
           <input
             type="text"
             placeholder="Search..."
@@ -58,7 +61,8 @@ const MapDropdown = () => {
               marginBottom: '10px',
               border: '1px solid #ccc',
               borderRadius: '4px',
-              boxSizing: 'border-box'
+              boxSizing: 'border-box',
+              marginTop:'5px'
             }}
           />
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

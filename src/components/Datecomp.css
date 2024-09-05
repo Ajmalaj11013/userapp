@@ -11,9 +11,14 @@
     font-size: large;
     background-color: rgb(37, 66, 132);
     color: white;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1E3A5F;
+
   }
   .pre{
     white-space: pre;
+    font-size: 13px;
   }
 .search-bar{
   margin: 10px;
@@ -26,4 +31,29 @@
   border-radius: 4px;
   font-size: 14px;
   text-align: center;
+}
+.marg-bot{
+  margin-bottom: 10px;
+}
+.search-button, .search-link {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.search-button svg, .search-link svg {
+  fill: #f9f6f6; /* Default icon color */
+  width: 24px;
+  height: 24px;
+}
+
+.search-button:hover svg, .search-link:hover svg {
+  fill: #f8f0f0; /* Icon color on hover */
 }
