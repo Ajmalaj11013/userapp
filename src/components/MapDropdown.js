@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './MapDropdown.css';
+import { CartContext } from './CartContext';
 
 const items = [
   "Kasaragod",
@@ -17,6 +18,8 @@ const items = [
 ];
 
 const MapDropdown = () => {
+
+  const { settLocation } = useContext(CartContext);
   const [selectedItem, setSelectedItem] = useState(null);  
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -76,6 +79,7 @@ const MapDropdown = () => {
                 }}
                 onClick={() => {
                   setSelectedItem(item);
+                  settLocation(item);
                   setIsOpen(false); // Close dropdown on selection
                 }}
               >

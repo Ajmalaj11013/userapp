@@ -7,10 +7,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-Family: monospace;
     box-sizing: border-box;
-    background-color:#ffffff;
     height: 80px;
-    border-bottom: 2px solid #36ff76;
     font-weight: bold;
+    background-color: white;
     }
 
 .flex1{

@@ -1,3 +1,40 @@
 .home-layout{
     margin-bottom: 140px;
 }
+
+.initial-display{
+    background-color: white;
+    display: flex;
+    width: 95%;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: rgb(55, 59, 55);
+    margin:10px;
+    padding: 8px 0px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    border-bottom: 2px solid #abbab0;
+    
+}
+.about-us{
+    background-color: rgb(99, 89, 89);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    margin:10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: justify;
+    font-family:'sans-serif'}
+.h2-margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.remove-none{
+    display: none;
+}

@@ -1,6 +1,8 @@
 const Notification = () => {
     return (
-      <h1>Notification</h1>
+      <div className="fullscreen-div">
+      <p>You don't have any Notifications</p>
+      </div>
     );
   };
   

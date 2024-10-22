@@ -1,9 +1,12 @@
 .fullscreen-div {
-    width: 100vw;   /* 100% of the viewport width */
     height: 100vh;  /* 100% of the viewport height */
     padding: 0;
-    background-color: #f0f0f0; /* Optional: set a background color */
     padding-top: 10px;
+    box-sizing: border-box;
+    background-color: #2c874c;
+    background-color: rgb(163, 180, 213);
+    background-color: #f0f0f0;
+    margin-bottom: 200px;
 }
 .advance{
     font-family: monospace;
@@ -12,7 +15,7 @@
     display: flex;
     flex-direction: row;
     position: fixed;
-    bottom: 60px;
+    bottom: 52px;
     align-items: center;
     justify-content: space-around;
     background-color: white;
@@ -33,4 +36,17 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-  
+@media (min-width: 768px) {
+    .fullscreen-div {
+        max-width: 600px; /* Fixed width */
+        
+        
+    }
+    .advance{
+        max-width: 600px;
+    }
+    .pay-button{
+        margin-left: 100px;
+        font-size: 13px;
+    }
+}

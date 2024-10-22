@@ -1,0 +1,12 @@
+.typing-effect {
+    font-family: monospace;
+    background-color: yellow;
+  }
+  
+  .typing-effect h2 {
+    margin: 0; /* Adjust spacing as needed */
+    font-size: 1.5em; /* Adjust font size as needed */
+    white-space: nowrap;
+  }
+
+  

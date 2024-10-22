@@ -32,4 +32,9 @@
   .footer a:hover {
     color: #e0e0e0;
   }
-  
+  @media (min-width: 768px) {
+    .footer {
+        max-width: 600px; /* Fixed width */
+        margin: 0 auto;   /* Center the content */                
+    }
+  }

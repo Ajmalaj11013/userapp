@@ -1,8 +1,8 @@
 .card-details {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 0px;
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius: 8px;
     padding-top: 10px;
-    margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-Family: monospace;
     color: black;
@@ -10,10 +10,15 @@
     background-color:#ffffff;
     font-size: large;
     background-color: rgb(37, 66, 132);
-    color: white;
     display: flex;
     justify-content: space-evenly;
     background-color: #1E3A5F;
+    background-color: #f8f9f6;
+    padding-bottom: 10px;
+    background-color: #1a7d4b;
+    color: white;
+    border-bottom:2px solid #454647;
+
 
   }
   .pre{
@@ -22,38 +27,46 @@
   }
 .search-bar{
   margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .pick{
-  width: 200px;
-  padding: 4px;
+  
+  width: 80px;
+  padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
   text-align: center;
-}
-.marg-bot{
-  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  
 }
 .search-button, .search-link {
-  background: none;
+  background-color: #007bff;
   border: none;
   padding: 8px;
+  border-radius: 4px;
+  color: white;
   cursor: pointer;
-  outline: none;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  height: 80px;
+  margin-top: 10px;
 }
 
 
 .search-button svg, .search-link svg {
-  fill: #f9f6f6; /* Default icon color */
-  width: 24px;
-  height: 24px;
+  fill: #291f78; /* Default icon color */
+  width: 26px;
+  height: 26px;
 }
 
 .search-button:hover svg, .search-link:hover svg {
-  fill: #f8f0f0; /* Icon color on hover */
+  fill: #1a7d4b; /* Icon color on hover */
 }

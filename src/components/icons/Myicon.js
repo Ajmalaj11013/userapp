@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faHome, faHistory,faCheckCircle,faTrash, faEdit,faTimes,faCheck,faMapMarkerAlt, faBookOpen, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import {faSearch, faBell, faHome,faCalendar,faTrash, faEdit,faTimes,faCheck,faMapMarkerAlt, faBookOpen, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 import './Icon.css';
 
 export const BellIcon = ({ notificationCount }) => {
@@ -53,8 +53,29 @@ export const SaveIcon = () => (
   </div>
 );
 
-export const CartIcon = () => (
-  <div className="icon-position">
-    <FontAwesomeIcon icon={faShoppingCart} className="save-icon" />
-  </div>
-);
+export const CartIcon = ({ notificationCount }) => {
+  return (
+    <div className="icon-position">
+      <FontAwesomeIcon icon={faShoppingCart} className="save-icon" />
+      {notificationCount > 0 && (
+        <span className="notification-count">{notificationCount}</span>
+      )}
+    </div>
+  );
+};
+
+export const DateIcon = () => {
+  return (
+    <div>
+      <FontAwesomeIcon icon={faCalendar} className="date-icon" />
+    </div>
+  );
+};
+
+export const SearchIcon = () => {
+  return (
+    <div>
+      <FontAwesomeIcon icon={faSearch} className="search-icon" />
+    </div>
+  );
+};

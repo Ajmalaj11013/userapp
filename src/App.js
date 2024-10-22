@@ -10,6 +10,8 @@ import Header from './components/Header';
 import './App.css';
 import Footer from './components/Footer';
 import Cart from './components/Cart.js';
+import ScrollToTop from './components/ScrollToTop.js';
+
 
 
 function App() {
@@ -23,7 +25,8 @@ function App() {
   return (
     <CartProvider>
     <Router>
-      <div className="app">
+     <ScrollToTop/> 
+      <div className="app">          
             <Header />
             <div className="content">
               <Routes>
